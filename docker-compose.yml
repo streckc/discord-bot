@@ -1,0 +1,14 @@
+version: "3"
+services:
+  bot:
+    image: node
+    user: node
+    working_dir: /opt/node_app/bot
+    entrypoint:
+     - npm
+     - run
+     - start
+    stdin_open: true
+    tty: true
+    volumes:
+     - .:/opt/node_app
