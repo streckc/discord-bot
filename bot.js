@@ -62,11 +62,11 @@ client.login(config.token).catch( e => {
 });
 
 client.on('guildMemberAvailable', member => {
-  console.log('Member available: ' + member.nicname);
+  console.log('Member available: ' + member.nickname);
 });
 
 client.on('guildMemberUnavailable', member => {
-  console.log('Member not available: ' + member.nicname);
+  console.log('Member not available: ' + member.nickname);
 });
 
 const parseMessage = (msg) => {
