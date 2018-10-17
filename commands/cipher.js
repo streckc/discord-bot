@@ -6,7 +6,11 @@ const cipher = (msg, args) => {
     if (message) {
       if (cipher.match(/^rot[0-9]*$/i)) {
         const rotation = parseInt(cipher.replace(/[^0-9]/g, ''), 10);
-        msg.channel.send(cipher_rot(rotation, message));
+        if (rotation >= 0 && rotation <= 26) {
+          msg.channel.send(cipher_rot(rotation, message));
+        } else {
+          msg.channel.send('There are only 26 letters in the alphabet. Try a different number.');
+        }
       } else {
         msg.channel.send('The cipher of "' + cipher + '" is not known by me.... yet.');
       }

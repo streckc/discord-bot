@@ -3,7 +3,7 @@ services:
   bot:
     image: node
     user: node
-    working_dir: /opt/node_app/bot
+    working_dir: /opt/node_app
     entrypoint:
      - npm
      - run
