@@ -1,7 +1,8 @@
 {
   "cipher": [
-    "The message is encode by a cipher that was named after a Roman General.",
-    "Not a hint 2",
-    "Not a hint 3"
+    "The message is encoded by a cipher that was named after a Roman General.",
+    "The message is a polyalphbetic cipher, meaning that each letter in the alphabet is used only once.",
+    "You can use the '!cipher' command to learn more about the cipher that is used.",
+    "The thing about a rotation cipher is that you my have to guess how many charaters must be rotated.  Is it 3, 13, 25?"
   ]
 }
