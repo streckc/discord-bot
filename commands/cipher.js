@@ -26,7 +26,7 @@ const cipher_help = (verbose=false) => {
   if (verbose) {
     return  'Usage: cipher <cipher> [<cipher params>] <message to code>\n\nEncode the message with the cipher specified.  Supported ciphers are:\n - rot<0-26>';
   } else {
-    return  'Encode the a message with a cipher.';
+    return  'Encode the message with a cipher.';
   }
 }
 
